@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "959020570369",
+    "firebase_url": "https://tugas-robbi-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tugas-robbi",
+    "storage_bucket": "tugas-robbi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959020570369:android:5a5264f376f0919daced00",
+        "android_client_info": {
+          "package_name": "com.example.pb_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3B0gKwpj1gpbFseU9YApcFbuktlrS-Lk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
