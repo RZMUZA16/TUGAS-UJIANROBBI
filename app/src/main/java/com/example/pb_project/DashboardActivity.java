@@ -26,18 +26,15 @@ public class DashboardActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         checkCurrentUser();
 
-        // Initialize views
         Toolbar toolbar = findViewById(R.id.toolbar);
         menuListView = findViewById(R.id.user_menu);
         searchBar = findViewById(R.id.search_bar);
 
-        // Setup toolbar
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("User Dashboard");
         }
 
-        // Setup menu items
         String[] menuItems = {
                 "Profile",
                 "Financial Tracker",
@@ -54,24 +51,21 @@ public class DashboardActivity extends AppCompatActivity {
 
         menuListView.setAdapter(adapter);
 
-        // Handle menu item clicks
         menuListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
-                    case 0: // Profile
+                    case 0:
                         startActivity(new Intent(DashboardActivity.this, ProfileActivity.class));
                         break;
-                    case 1: // Financial Tracker
-                        startActivity(new Intent(DashboardActivity.this, FinanceActivity.class));
-                        break;
-                    case 2: // Memo
+                    case 1:
+                    case 2:
                         startActivity(new Intent(DashboardActivity.this, MemoActivity.class));
                         break;
-                    case 3: // Settings
+                    case 3:
                         startActivity(new Intent(DashboardActivity.this, SettingsActivity.class));
                         break;
-                    case 4: // Logout
+                    case 4:
                         logoutUser();
                         break;
                 }

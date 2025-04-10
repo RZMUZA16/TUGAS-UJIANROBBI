@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PB-project</string>
+    <string name="account_settings" />
+    <string name="title_settings" />
 </resources>
